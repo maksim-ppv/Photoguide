@@ -1,0 +1,307 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+body {
+  color: #f1f1f1;
+  margin: 0;
+  font-family: 'Proxima Nova';
+}
+
+body a {
+  text-decoration: none;
+}
+
+button:active, button:focus {
+  outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+section {
+  padding-top: 100px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+  line-height: 140%;
+  font-family: 'Proxima Nova Semibold';
+}
+
+@media (max-width: 1199px) {
+  .btn-order {
+    height: 60px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .btn {
+    font-size: 15px;
+    padding: 20px 25px;
+  }
+  .btn-order {
+    height: 60px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding-top: 40px;
+  }
+  .btn-o {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .btn {
+    font-size: 14px;
+    padding: 20px 20px;
+  }
+  .btn-order {
+    padding: 20px 0px;
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("/fonts/ProximaNova-Semibold.eot");
+  src: url("/fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Semibold.woff") format("woff"), url("/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/fonts/ProximaNova-Light.eot/ProximaNova-Light.eot");
+  src: url("/fonts/ProximaNova-Light.eot/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Light.woff") format("woff"), url("/fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("/fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/fonts/Gilroy-Bold.eot#iefix") format("embedded-opentype"), url("/fonts/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  background: #f1f1f1 url(../img/jakob-owens-oIPwvZIAp0o-unsplash.png) no-repeat fixed;
+  background-size: cover;
+}
+
+.navbar {
+  background: url(../img/noize.png) no-repeat;
+  background-size: cover;
+}
+
+.form-navbar {
+  height: 80px;
+  width: 100%;
+  background: url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) no-repeat fixed;
+  background-size: cover;
+}
+
+.content-navbar {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__title {
+  font-family: Gilroy;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 100%;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.logo__text {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 20px;
+  opacity: 0.7;
+  font-family: 'Proxima Nova';
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.content-navbar__link {
+  font-family: 'Proxima Nova';
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 100%;
+  margin-left: 20px;
+}
+
+.hero-title {
+  font-family: Gilroy;
+  font-size: 90px;
+  line-height: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.hero-text {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 26px сверстан;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.5px;
+  max-width: 510px;
+  margin: 0 auto;
+}
+
+.hero-text span {
+  text-decoration: underline;
+  font-style: italic;
+  font-family: none;
+  font-size: 28px;
+}
+
+.btn-hero {
+  width: 337px;
+  height: 70px;
+  color: #333333;
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 75px;
+}
+
+.hero-bot {
+  padding-top: 75px;
+}
+
+.hero-bot__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.hero-bot__text-left {
+  font-family: 'Proxima Nova Semibold';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-bot__blocks {
+  height: 140px;
+  width: 100%;
+  background: url(../img/noize.png) no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-bot__bg {
+  width: 100%;
+  background: url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) no-repeat fixed;
+  background-size: cover;
+}
+
+.hero-bot__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block__line {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100px;
+}
+
+.block__text {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  max-width: 215px;
+}

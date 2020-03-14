@@ -1,0 +1,56 @@
+body
+    color: #f1f1f1
+    margin: 0
+    font-family: 'Proxima Nova'
+    a
+        text-decoration: none
+button:active, button:focus
+    outline: none !important
+button::-moz-focus-inner
+    border: 0 !important
+section
+    padding-top: 100px
+button
+    cursor: pointer
+
+.btn
+    border: none
+    text-align: center
+    background-color: transparent
+    letter-spacing: 1px
+    text-transform: uppercase
+    background-color: #ffffff
+    border: none
+    line-height: 140%
+    font-family: 'Proxima Nova Semibold'
+
+
+
+@media (max-width: 1199px)
+    .btn
+        &-order
+            height: 60px
+            width: 250px
+@media (max-width: 991px)
+    .btn
+        font-size: 15px
+        padding: 20px 25px
+        &-order
+            height: 60px
+            width: 200px
+@media (max-width: 768px)
+    section
+        padding-top: 60px
+@media (max-width: 576px)
+    section
+        padding-top: 40px
+    .btn-o     
+        display: none
+@media (max-width: 376px)
+    .btn
+        font-size: 14px
+        padding: 20px 20px
+        &-order
+            padding: 20px 0px
+            width: 100%
+
