@@ -1,15 +1,10 @@
 .header
-    background: #f1f1f1 url(../img/jakob-owens-oIPwvZIAp0o-unsplash.png) no-repeat fixed
+    background: #f1f1f1 url(../img/jakob-owens-oIPwvZIAp0o-unsplash.png) center no-repeat fixed
     background-size: cover
-    
 .navbar
-    background: url(../img/noize.png) no-repeat
-    background-size: cover
-
-.form-navbar
     height: 80px
     width: 100%
-    background: url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) no-repeat fixed
+    background: url(../img/noize.png) no-repeat, url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) center no-repeat fixed
     background-size: cover
 .content-navbar
     height: 80px 
@@ -23,7 +18,6 @@
     font-family: Gilroy
     color: #ffffff
     font-size: 26px
-    line-height: 100%
     padding-left: 10px
     padding-right: 20px
 .logo__text 
@@ -33,16 +27,15 @@
     font-family: 'Proxima Nova'
     font-size: 12px
     line-height: 130%
-.content-navbar__links 
+.menu-button
+    display: none
 .content-navbar__link
-      font-family: 'Proxima Nova'
-      text-decoration: none
-      color: #FFFFFF
-      font-size: 15px
-      line-height: 100%
-      margin-left: 20px
-.hero 
-.hero-content
+    font-family: 'Proxima Nova'
+    text-decoration: none
+    color: #FFFFFF
+    font-size: 15px
+    line-height: 100%
+    margin-left: 20px
 .hero-title
     font-family: Gilroy
     font-size: 90px
@@ -51,12 +44,11 @@
     padding-top: 100px
 .hero-text
     font-family: 'Proxima Nova Semibold'
-    font-size: 26px
-    line-height: 140%
     text-align: center
     letter-spacing: -0.5px
-    max-width: 510px
     margin: 0 auto
+    font-size: 26px
+    line-height: 140%
     span
         text-decoration: underline
         font-style: italic
@@ -82,30 +74,155 @@
     font-family: 'Proxima Nova Semibold'
     text-transform: uppercase
     letter-spacing: 3px
-
 .hero-bot__blocks
     height: 140px
     width: 100%
-    background: url(../img/noize.png) no-repeat
+    background: url(../img/noize.png) no-repeat, url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) center no-repeat fixed
     background-size: cover
     display: flex
     justify-content: space-around
     align-items: center
-.hero-bot__bg
-    width: 100%
-    background: url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) no-repeat fixed
-    background-size: cover
-.hero-bot__block 
+.hero-bot__block
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     align-items: center
-.block__line
-    border-left: 1px solid rgba(255, 255, 255, 0.2)
+    border-right: 1px solid rgba(255, 255, 255, 0.2)
+    width: 100%
     height: 100px
+.hero-bot__block:nth-child(3)
+    border-right: none
+.block__item
+    display: flex
+    justify-content: space-around
+    align-items: center
 .block__text
-    margin-left: 30px
     font-size: 18px
     line-height: 140%
     color: #FFFFFF
     opacity: 0.8
-    max-width: 215px
+    max-width: 240px
+    margin-left: 10%
+@media (max-width: 1199px)
+    .hero-title
+        padding-top: 70px
+    .btn-hero 
+        margin-top: 60px
+    .hero-bot
+        padding-top: 60px
+    
+@media (max-width: 991px)
+    .navbar 
+        height: 70px
+    .content-navbar
+        height: 70px 
+    .hero-title
+        padding-top: 70px
+        font-size: 70px
+    .hero-text 
+        font-size: 18px
+    .btn-hero 
+        width: 300px
+        height: 60px
+        font-size: 13px
+        margin-top: 50px
+    .hero-bot
+        padding-top: 50px
+    .hero-bot__text
+        font-size: 15px 
+    .hero-bot__blocks 
+        height: 100px
+    .hero-bot__block
+        height: 80px   
+    .block__text
+        font-size: 13px
+        line-height: 100%
+        max-width: 160px 
+@media (max-width: 768px)
+    .navbar 
+        height: 60px
+    .content-navbar
+        position: relative
+        height: 60px 
+    .menu-button
+        display: block
+    .content-navbar__links
+        position: absolute
+        background: url(../img/noize.png) no-repeat, url(../img/jakob-owens-oIPwvZIAp0o-unsplash2.png) center no-repeat fixed
+        background-size: cover
+        top: -300px
+        width: 100%
+        transform: translateY(-200%)
+        opacity: 0 
+        transition: 1s
+    .content-navbar__link
+        text-align: center
+        display: block
+        padding: 10px 0 10px 0
+    .hero-title
+        padding-top: 50px
+        font-size: 50px
+    .hero-text
+        font-size: 15px
+        span 
+            font-size: 18px
+        svg
+            width: 20px
+            height: 15px
+    .btn-hero 
+        width: 250px
+        height: 50px
+        font-size: 10px
+    .hero-bot__text
+        font-size: 12px 
+    .hero-bot__blocks
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        min-height: 150px
+    .hero-bot__block
+        width: 50%
+        height: 60px
+    .block__img
+        margin: 0 10px 0 10px
+    .block__text
+        display: block
+        margin-left: 0
+        max-width: 200px
+        font-size: 13px
+@media (max-width: 576px)
+    .logo__title
+        font-size: 18px 
+    .logo__text 
+        font-size: 10px 
+    .hero-title
+        font-size: 45px
+        margin: 0
+        margin-bottom: 20px
+    .hero-text
+        font-size: 13px
+        span 
+            font-size: 15px 
+    .btn-hero 
+        width: 200px
+        height: 35px
+        font-size: 9px
+    .hero-bot__text
+        font-size: 10px 
+    .hero-bot__blocks
+        height: 150px 
+    .hero-bot__block
+        justify-content: start
+        margin: 0 10px
+        width: 100%
+        height: 40px
+        border-right: none
+    .block__item 
+        justify-content: start
+    .block__img
+        svg
+            width: 30px
+            height: 30px  
+    .block__text
+        max-width: none 
+        font-size: 12px
+    .block__line 
