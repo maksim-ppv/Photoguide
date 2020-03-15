@@ -76,48 +76,6 @@ button {
   font-size: 15px;
 }
 
-@media (max-width: 991px) {
-  section {
-    padding: 65px 0 40px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 50px 0 30px 0;
-  }
-}
-
-@media (max-width: 576px) {
-  section {
-    padding-top: 30px;
-  }
-}
-
-@font-face {
-  font-family: 'Proxima Nova Semibold';
-  src: url("/fonts/ProximaNova-Semibold.eot");
-  src: url("/fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Semibold.woff") format("woff"), url("/fonts/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("/fonts/ProximaNova-Light.eot/ProximaNova-Light.eot");
-  src: url("/fonts/ProximaNova-Light.eot/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Light.woff") format("woff"), url("/fonts/ProximaNova-Light.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("/fonts/Gilroy-Bold.eot");
-  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/fonts/Gilroy-Bold.eot#iefix") format("embedded-opentype"), url("/fonts/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .header {
   background: #f1f1f1 url(../img/jakob-owens-oIPwvZIAp0o-unsplash.png) center no-repeat fixed;
   background-size: cover;
@@ -866,11 +824,11 @@ button {
   margin: 20px 0;
   list-style-type: none;
   padding-left: 25px;
-  background: url("/img/vector.png") left 2px no-repeat;
+  background: url(../img/vector.png) left 2px no-repeat;
 }
 
 .shadow {
-  background: url("/img/vector-shadow.png") left 2px no-repeat;
+  background: url(../img/vector-shadow.png) left 2px no-repeat;
   color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1033,4 +991,28 @@ button {
           transform-origin: center;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
