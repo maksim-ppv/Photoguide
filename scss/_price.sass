@@ -1,0 +1,117 @@
+.price
+    background: #202020 
+
+.price__title
+    font-size: 42px
+.price__cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.price__card
+    flex: 0 1 32.5%
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    display: flex
+    flex-direction: column
+.price__card:hover
+    border: 1px solid rgba(255, 255, 255, 1)
+.card__header
+    width: 100%
+    text-align: center
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    padding: 10px 20px
+.card__subtitle
+    text-transform: uppercase
+    color: #FFFFFF
+    font-size: 15px
+    line-height: 140%
+    opacity: 0.2
+.card__title
+    font-family: Playfair Display
+    font-style: italic
+    font-weight: bold
+    font-size: 34px
+    text-align: center
+    letter-spacing: -0.5px
+    color: #F2C94C 
+    margin: 0
+.card__list
+    width: 100%
+    padding: 15px 25px 
+.list__ul
+    max-width: 200px
+    margin-left: 0px
+    padding-left: 0px
+.list__li
+    margin: 20px 0 
+    list-style-type: none
+    padding-left: 25px
+    background: url('/img/vector.png') left 2px no-repeat
+.shadow
+    background: url('/img/vector-shadow.png') left 2px no-repeat
+    color: rgba(255, 255, 255, 0.1)
+.card__bottom
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    width: 100%
+    padding: 15px 20px 
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+.bottom__price
+    font-family: Proxima Nova semibold
+    font-size: 36px
+    display: inline-block
+.bottom__button
+    background: linear-gradient(128.38deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%), #F2C94C;
+    box-shadow: 0 5px 10px rgba(242,201,76, 0.5)
+    border: none
+    text-transform: uppercase
+    font-size: 15px
+    width: 70%
+    padding: 15px 0
+    margin: 15px
+@media (max-width: 991px)
+    .bottom__button
+        font-size: 13px
+        padding: 13px 0
+        margin: 13px
+@media (max-width: 768px)
+    .price__title
+        font-size: 32px
+    .price__cards
+        justify-content: space-around
+    .price__card
+        margin: 10px 5px
+        flex: 0 1 32.5%
+    .card__header
+        padding: 10px 10px
+    .card__subtitle
+        font-size: 13px
+    .card__title
+        font-size: 28px
+    .card__list
+        padding: 10px 20px 
+    .list__ul
+        max-width: 150px
+    .list__li
+        font-size: 13px
+    .card__bottom
+        padding: 10px 15px 
+    .bottom__price
+        font-size: 26px
+    .bottom__button
+        font-size: 10px
+        padding: 10px 0
+        margin: 15px
+@media (max-width: 576px)
+    .price__title
+        font-size: 22px
+    .price__card
+        flex: 0 1 100%
+    .list__ul
+        max-width: 100%
+    .bottom__button
+        width: 80%
+
+
+

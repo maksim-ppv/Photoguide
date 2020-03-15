@@ -1,4 +1,163 @@
-.wrapper 
-.content 
-.tabs 
-.tabs__item 
+.gallery 
+.header__line
+    text-align: center
+.header__subtitle
+    color: #F2C94C
+    letter-spacing: 10px
+    text-transform: uppercase 
+.header__title
+    font-family: Gilroy
+    font-size: 42px
+.gallery__title
+    color:  #333333
+.tab__links
+     display: flex
+     justify-content: space-around
+     align-items: center
+     flex-wrap: wrap 
+     max-width: 884px
+     margin: 0 auto 40px auto
+.tab__block
+    padding: 15px 25px
+    cursor: pointer
+    color: #333333
+    font-size: 15px
+    letter-spacing: 1px
+    line-height: 140%
+    transition: 1s
+.tab_active
+    background: linear-gradient(110.82deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%), #F2C94C
+    box-shadow: 0 5px 20px rgba(242,201,76, 0.8)
+    border: none
+.photos 
+    display: block
+.gallery
+    position: relative
+.tabs__block
+    position: absolute
+    display: grid
+    max-width: 1170px
+    opacity: 0
+    transition: 1.5s
+    transform: scale(0)
+    left: 20
+    top: 20
+.block_active
+    position: relative
+    display: grid
+    margin: 0 auto
+    opacity: 1
+    transform: scale(1)
+    transform-origin: 50% 80%
+    left: 0 !important
+.photo__item
+    padding: 10px 
+    height: 100%
+    cursor: pointer
+    img
+        width: 100%
+        height: 100%
+        object-fit: fill
+.photo__item:before(5)
+    background-color: black
+    z-index: 3
+    img
+        z-index: 1
+.block__photo_11
+    grid-column: 1
+    grid-row: 1
+.block__photo_12 
+    grid-column: 2
+    grid-row: 1
+.block__photo_13
+    grid-column: 3
+    grid-row: 1/3
+.block__photo_14
+    grid-column: 1/3
+    grid-row: 2/4
+.block__photo_15
+    grid-column: 3
+    grid-row: 3/4
+.block__photo_21
+    grid-column: 1
+    grid-row: 3/4 
+.block__photo_22
+    grid-column: 2
+    grid-row: 3/4 
+.block__photo_23
+    grid-column: 3
+    grid-row: 2/4  
+.block__photo_24
+    grid-column: 1/3
+    grid-row: 1/3  
+.block__photo_25
+    grid-column: 3
+    grid-row: 1  
+.block__photo_31
+    grid-column: 1
+    grid-row: 1     
+.block__photo_32
+    grid-column: 2
+    grid-row: 1  
+.block__photo_33
+    grid-column: 1
+    grid-row: 2  
+.block__photo_34
+    grid-column: 2/4
+    grid-row: 2 
+.block__photo_35
+    grid-column: 3
+    grid-row: 1  
+.block__photo_41
+    grid-column: 2
+    grid-row: 2  
+.block__photo_42
+    grid-column: 3
+    grid-row: 2  
+.block__photo_43
+    grid-column: 1
+    grid-row: 1  
+.block__photo_44
+    grid-column: 2/4
+    grid-row: 1  
+.block__photo_45
+    grid-column: 1
+    grid-row: 2  
+.block__photo_51
+    grid-column: 2/4
+    grid-row: 2
+
+@media (max-width: 991px)
+
+    .header__subtitle
+        font-size: 13px 
+    .header__title 
+        font-size: 35px
+    .tab__block 
+        font-size: 13px
+@media (max-width: 768px)
+    .header__subtitle
+        font-size: 13px 
+    .header__title 
+        font-size: 25px
+    .gallery__title 
+    .tab__links 
+    .tab__block
+        flex: 1 1 25% 
+        padding: 10px 15px
+        font-size: 10px
+        margin: 0 10px 20px 10px
+@media (max-width: 576px)
+    .header__subtitle
+        font-size: 10px 
+    .header__title 
+        font-size: 22px
+    .gallery__title 
+    .tab__links
+        margin-bottom: 0 
+    .tab__block
+        flex: 1 1 33% 
+        padding: 10px 15px
+        font-size: 8px
+        margin: 0 10px 20px 10px
+
